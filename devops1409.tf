@@ -24,12 +24,6 @@ data "digitalocean_ssh_key" "terraform" {
   name = "terraform"
 }
 
-resource "digitalocean_spaces_bucket" "dev1408s" {
-  name   = "dev1408s"
-  region = "fra1"
-}
-
-
 resource "digitalocean_droplet" "dev1408" {
   image    = "ubuntu-20-04-x64"
   name     = "dev1408"
