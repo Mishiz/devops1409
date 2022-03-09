@@ -90,7 +90,7 @@ resource "digitalocean_droplet" "prod1408" {
       "apt install -y tomcat9",
       "apt install -y s3cmd",
       "rm -rf /var/lib/tomcat9/webapps/*",
-      "cd /var/lib/tomcat9/webapps"
+      "cd /var/lib/tomcat9/webapps",
       "s3cmd get s3://dev1408s/ROOT.war"
     ]
   }
