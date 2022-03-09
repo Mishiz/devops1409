@@ -64,7 +64,7 @@ resource "digitalocean_droplet" "dev1408" {
 
 resource "digitalocean_droplet" "prod1408" {
   image    = "ubuntu-20-04-x64"
-  name     = "dev1408"
+  name     = "prod1408"
   region   = "fra1"
   size     = "s-1vcpu-2gb-amd"
   ssh_keys = [
