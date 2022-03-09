@@ -49,6 +49,7 @@ resource "digitalocean_droplet" "dev1408" {
   provisioner "remote-exec" {
     inline = [
       "apt update",
+      "apt update",
       "apt install -y default-jdk",
       "apt install -y git",
       "apt install -y maven",
@@ -85,6 +86,7 @@ resource "digitalocean_droplet" "prod1408" {
 
   provisioner "remote-exec" {
     inline = [
+      "apt update",
       "apt update",
       "apt install -y default-jdk",
       "apt install -y tomcat9",
